@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gunmetal</item>
+        <item name="colorPrimaryDark">@color/eerieBlack</item>
+        <item name="colorAccent">@android:color/primary_text_dark</item>
+        <item name="android:fontFamily">@font/avenir</item>
+        <item name="editTextColor">#f9f9f9</item>
+
+        <item name="toolbarBackground">@color/gunmetal</item>
+        <item name="cardBackground">@color/gunmetal</item>
+        <item name="noteListBackground">@color/eerieBlack</item>
+        <item name="primaryTextColor">@color/white</item>
+        <item name="secondaryTextColor">@android:color/secondary_text_dark</item>
+        <item name="dividerColor">@color/darkestYellow</item>
+        <item name="searchIconPlaceholder">@drawable/ic_search_white_24dp</item>
+        <item name="tintColor">@color/white</item>
+        <item name="noteBackground">@color/eerieBlack</item>
+        <item name="contentTextColor">@color/offWhite</item>
+    </style>
+
+    <style name="AboutDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AboutDialogAnimation</item>
+    </style>
+
+    <style name="AboutDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+</resources>

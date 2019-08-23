@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.NotesListActivity"
-    android:background="@color/backgroundYellow">
+    android:background="?attr/noteListBackground">
     
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layoutAnimation="@anim/layout_animation"
         android:padding="5dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 

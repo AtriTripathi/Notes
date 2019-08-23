@@ -31,6 +31,14 @@ public class NoteRepository {
         return mNoteDatabase.getNotesDao().getNotes();
     }
 
+    public LiveData<List<Note>> searchQuery(String query) {
+        return mNoteDatabase.getNotesDao().searchFor(query);
+    }
+
+//    public void swapNotesTask(Note noteOne, Note noteTwo) {
+//        new SwapAsyncTask(mNoteDatabase.getNotesDao()).execute(noteOne,noteTwo);
+//    }
+
     public void deleteNoteTask(Note note) {
         new DeleteAsyncTask(mNoteDatabase.getNotesDao()).execute(note);
     }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NotesThemeAttrs">
+        <attr name="noteListBackground" format="color"/>
+        <attr name="cardBackground" format="color"/>
+        <attr name="primaryTextColor" format="color"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="secondaryTextColor" format="color"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="searchIconPlaceholder" format="integer"/>
+        <attr name="toolbarBackground" format="color"/>
+        <attr name="tintColor" format="integer"/>
+        <attr name="noteBackground" format="color"/>
+    </declare-styleable>
+</resources>

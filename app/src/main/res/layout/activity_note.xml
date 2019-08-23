@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/noteBackground"
     android:orientation="vertical"
-    tools:context=".activities.NoteActivity"
-    android:background="@color/lightYellow">
+    tools:context=".activities.NoteActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -15,9 +15,11 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary">
+            android:background="?attr/toolbarBackground"
+            app:titleMarginStart="4dp"
+            app:titleTextColor="?attr/primaryTextColor">
 
-            <include layout="@layout/layout_note_toolbar"/>
+            <include layout="@layout/layout_note_toolbar" />
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -26,13 +28,14 @@
         android:id="@+id/note_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="22sp"
-        android:elegantTextHeight="true"
-        android:textColor="@color/black"
-        android:padding="5dp"
         android:layout_margin="4dp"
         android:backgroundTint="@android:color/transparent"
+        android:elegantTextHeight="true"
         android:gravity="top"
-        android:imeOptions="flagNoExtractUi"/>
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textColor="?attr/editTextColor"
+        android:textIsSelectable="true"
+        android:textSize="21sp" />
 
 </LinearLayout>

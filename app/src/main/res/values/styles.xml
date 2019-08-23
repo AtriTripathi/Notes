@@ -1,12 +1,36 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@android:color/primary_text_light</item>
         <item name="android:fontFamily">@font/avenir</item>
+        <item name="editTextColor">@android:color/primary_text_light</item>
+
+        <item name="toolbarBackground">@color/darkYellow</item>
+        <item name="cardBackground">@color/lightYellow</item>
+        <item name="noteListBackground">@color/backgroundYellow</item>
+        <item name="primaryTextColor">@color/black</item>
+        <item name="secondaryTextColor">@android:color/secondary_text_dark</item>
+        <item name="dividerColor">@color/darkYellow</item>
+        <item name="searchIconPlaceholder">@drawable/ic_search_black_24dp</item>
+        <item name="tintColor">@color/black</item>
+        <item name="noteBackground">@color/lightYellow</item>
+        <item name="contentTextColor">@color/gunmetal</item>
     </style>
+
+
+    <style name="AboutDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AboutDialogAnimation</item>
+    </style>
+
+    <style name="AboutDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
 
 </resources>

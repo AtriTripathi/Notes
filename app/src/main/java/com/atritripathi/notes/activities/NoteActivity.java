@@ -74,17 +74,6 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-//    @Override
-//    public boolean dispatchTouchEvent(MotionEvent ev) {
-//        if (getCurrentFocus() != null) {
-//            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//            if (imm != null) {
-//                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-//            }
-//        }
-//        return super.dispatchTouchEvent(ev);
-//    }
-
     private void hideSoftKeyboard() {
         InputMethodManager imm = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
         View view = this.getCurrentFocus();
@@ -130,8 +119,8 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
 
         String noteContent = mLinedEditText.getText().toString().trim();
         if (noteContent.length() > 0) {
-            mFinalNote.setTitle(mEditTitle.getText().toString());
-            mFinalNote.setContent(mLinedEditText.getText().toString());
+            mFinalNote.setTitle(mEditTitle.getText().toString().trim());
+            mFinalNote.setContent(mLinedEditText.getText().toString().trim());
             String timestamp = TimestampUtil.getCurrentTimestamp();
             mFinalNote.setTimeStamp(timestamp);
 
@@ -149,6 +138,7 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
         mLinedEditText.setFocusableInTouchMode(true);
         mLinedEditText.setCursorVisible(true);
         mLinedEditText.requestFocus();
+
     }
 
     private void disableContentInteraction() {
@@ -195,11 +185,11 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
             mFinalNote.setContent(mInitialNote.getContent());
             mFinalNote.setTimeStamp(mInitialNote.getTimeStamp());
 
-            mMode = EDIT_MODE_ENABLED;
+            mMode = EDIT_MODE_DISABLED;
             mIsNewNote = false;
             return false;
         }
-        mMode = EDIT_MODE_DISABLED;
+        mMode = EDIT_MODE_ENABLED;
         mIsNewNote = true;
         return true;
     }
@@ -214,10 +204,10 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
         mViewTitle.setText(R.string.note_title);
         mEditTitle.setText(R.string.note_title);
 
+
         mInitialNote = new Note();
         mFinalNote = new Note();
         mInitialNote.setTitle("Note Title");
-//        mFinalNote.setTitle("Note Title");
     }
 
     @Override
@@ -239,6 +229,7 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.toolbar_back_arrow: {
                 finish();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             }
         }
@@ -250,7 +241,9 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
             onClick(mCheck);
         } else {
             super.onBackPressed();
+//            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     @Override
@@ -267,4 +260,5 @@ public class NoteActivity extends AppCompatActivity implements View.OnClickListe
             enableEditMode();
         }
     }
+
 }

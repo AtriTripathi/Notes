@@ -13,5 +13,12 @@
     <color name="black">#000</color>
     <color name="white">#fff</color>
     <color name="redFab">#e65c4f</color>
+    <color name="deepDark">#1e212b</color>
+    <color name="gunmetal">#282830</color>
+    <color name="eerieBlack">#0d1821</color>
+    <color name="darkestYellow">#f4b942</color>
 
+    <color name="offWhite">#BBF9F9F9</color>
+    <color name="selected_background">#ffbcc3</color>
 </resources>
+

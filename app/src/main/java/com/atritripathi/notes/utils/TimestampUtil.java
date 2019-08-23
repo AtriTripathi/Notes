@@ -6,7 +6,7 @@ import java.util.Date;
 public class TimestampUtil {
     public static String getCurrentTimestamp() {
         try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("MM-yyyy");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
             return dateFormat.format(new Date());
         } catch (Exception e) {
             return null;
