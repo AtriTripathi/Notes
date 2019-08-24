@@ -26,9 +26,6 @@ public interface NoteDao {
     @Update
     int updateNote(Note... notes);
 
-//    @Query("UPDATE notes SET id = (CASE WHEN id = :idOne THEN :idTwo ELSE :idOne END) WHERE id in (:idOne,:idTwo)")
-//    int swapNotes(long idOne, long idTwo);
-
     @Query("SELECT * FROM notes WHERE (title LIKE :searchQuery OR content LIKE :searchQuery)")
     LiveData<List<Note>> searchFor(String searchQuery);
 }

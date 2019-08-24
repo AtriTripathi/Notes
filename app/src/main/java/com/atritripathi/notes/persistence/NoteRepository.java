@@ -19,11 +19,11 @@ public class NoteRepository {
         mNoteDatabase = NoteDatabase.getInstance(context);
     }
 
-    public void insertNoteTask(Note note) {
+    public void insertNoteTask(Note... note) {
         new InsertAsyncTask(mNoteDatabase.getNotesDao()).execute(note);
     }
 
-    public void updateNoteTask(Note note) {
+    public void updateNoteTask(Note... note) {
         new UpdateAsyncTask(mNoteDatabase.getNotesDao()).execute(note);
     }
 
@@ -35,11 +35,7 @@ public class NoteRepository {
         return mNoteDatabase.getNotesDao().searchFor(query);
     }
 
-//    public void swapNotesTask(Note noteOne, Note noteTwo) {
-//        new SwapAsyncTask(mNoteDatabase.getNotesDao()).execute(noteOne,noteTwo);
-//    }
-
-    public void deleteNoteTask(Note note) {
+    public void deleteNoteTask(Note... note) {
         new DeleteAsyncTask(mNoteDatabase.getNotesDao()).execute(note);
     }
 }

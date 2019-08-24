@@ -41,15 +41,18 @@ public class NotesRecyclerAdapter extends RecyclerView.Adapter<NotesRecyclerAdap
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
         try {
-            String day = mNotes.get(position).getTimeStamp().substring(0, 2);
-            String month = mNotes.get(position).getTimeStamp().substring(3, 5);
+            int posReverse = mNotes.size() - (position + 1);
+            String tempTimestamp = mNotes.get(posReverse).getTimeStamp();
+
+            String day = tempTimestamp.substring(0, 2);
+            String month = tempTimestamp.substring(3, 5);
             month = TimestampUtil.getMonthFromNumber(month);
-            String year = mNotes.get(position).getTimeStamp().substring(6);
+            String year = tempTimestamp.substring(6);
             String timestamp = day + " " + month + " " + year;
 
-            holder.title.setText(mNotes.get(position).getTitle());
+            holder.title.setText(mNotes.get(posReverse).getTitle());
             holder.timeStamp.setText(timestamp);
-            holder.content.setText(mNotes.get(position).getContent());
+            holder.content.setText(mNotes.get(posReverse).getContent());
 
         } catch (NullPointerException e) {
             Log.d(TAG, "onBindViewHolder: NullPointerException" + e.getMessage());
@@ -73,6 +76,7 @@ public class NotesRecyclerAdapter extends RecyclerView.Adapter<NotesRecyclerAdap
             title = itemView.findViewById(R.id.note_title);
             timeStamp = itemView.findViewById(R.id.note_timestamp);
             content = itemView.findViewById(R.id.note_content);
+
             this.onNoteClickListener = onNoteClickListener;
             this.onNoteLongClickListener = onNoteLongClickListener;
 

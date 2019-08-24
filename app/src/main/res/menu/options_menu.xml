@@ -9,17 +9,23 @@
         app:showAsAction="ifRoom|collapseActionView" />
 
     <item
-        android:id="@+id/night_mode"
+        android:id="@+id/menu_item_night_mode"
         android:title="@string/menu_night_mode"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/about"
+        android:id="@+id/menu_item_share"
+        android:title="@string/menu_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_about"
         android:title="@string/menu_about"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/menu_share"
-        android:title="@string/menu_share"
-        app:showAsAction="never" />
+        android:id="@+id/menu_item_exit"
+        android:title="@string/menu_exit"
+        app:showAsAction="never"/>
+
 </menu>

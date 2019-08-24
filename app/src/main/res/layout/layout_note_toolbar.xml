@@ -51,7 +51,7 @@
         android:ellipsize="end"
         android:textColor="?attr/primaryTextColor"
         android:layout_marginStart="16dp"
-        android:textSize="23sp"
+        android:textSize="22sp"
         android:visibility="visible"/>
 
     <EditText
@@ -65,7 +65,7 @@
         android:textCursorDrawable="@null"
         android:textColor="?attr/primaryTextColor"
         android:layout_marginStart="16dp"
-        android:textSize="23sp"
+        android:textSize="22sp"
         android:visibility="gone"
         android:paddingBottom="8dp"/>
 

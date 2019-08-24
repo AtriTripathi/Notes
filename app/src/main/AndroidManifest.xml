@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.NoteActivity"></activity>
-        <activity android:name=".activities.NotesListActivity">
+        <activity android:name=".activities.NoteActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name=".activities.NotesListActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -36,6 +36,10 @@ public class Note implements Parcelable {
         timeStamp = in.readString();
     }
 
+    @Ignore
+    public Note() {
+    }
+
     public static final Creator<Note> CREATOR = new Creator<Note>() {
         @Override
         public Note createFromParcel(Parcel in) {
@@ -54,10 +58,6 @@ public class Note implements Parcelable {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    @Ignore
-    public Note() {
     }
 
     public String getTitle() {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layoutAnimation
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:animation="@anim/item_animation"
-    android:delay="15%"
+    android:animation="@anim/recycler_item_anim"
+    android:delay="10%"
     android:animationOrder="random">
 
 </layoutAnimation>

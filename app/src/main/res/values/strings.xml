@@ -10,4 +10,87 @@
     <string name="about_dialog_details">Developed by <b>Atri Tripathi</b>\n\nVersion: 1.0</string>
     <string name="menu_about">About</string>
     <string name="menu_share">Share</string>
+    <string name="menu_exit">Exit</string>
+
+    <string-array name="dummy_note_titles">
+        <item>Welcome!</item>
+        <item>Dark Mode, Ooh!</item>
+        <item>Let\'s add a new note.</item>
+        <item>Grocery List</item>
+        <item>Work Items</item>
+        <item>College Stuff</item>
+        <item>Deleting a note.</item>
+        <item>Editing a note</item>
+        <item>Things I want to implement.</item>
+    </string-array>
+
+    <string-array name="dummy_note_contents">
+        <item>Perfect note taking app doesn\'t exis…
+            \n\nDuh!!\nThe wait is finally over.\n\nEnter Notes.
+            \nA clean and minimal note taking app.\n\nWhether you are a student, engineer, digital nomad,
+            hobbyist or even Elon freakin\' Musk, we\'ve all felt the need to take notes at some point
+            or the other. And nothing pisses us off more than installing a note taking app, only to
+            find out that its user interface resembles the launch controls of USS Enterprise spacecraft.
+            (Start Trek reference!)
+            \n\nNotes app beats all that.\nThe User Interface is designed to be squeaky clean and buttery smooth.
+            All of this ensures that the nothing stands between you, your thoughts and your phone.
+            \n\nNot even this app!
+        </item>
+        <item>Ahoy, for all the night shade lovers.
+            \nI have added a Dark Mode too, to fulfill your \"I do some serious shit on my phone.
+            Don\'t mess with me\" fantasy.
+            \n\nGo, check it out now.
+            \n\nYou will find it in the options menu at the top right corner of your screen.
+        </item>
+        <item>Start by adding your very first note.
+            \n\nCan you see that button on bottom right corner of your screen?
+            \n\n Yeah, the red one with + sign on it. Don\'t worry it stays the same in both, Light and Dark mode.
+            \n\nClick that.\nA new page will open where you can enter you\'re notes.
+            \n\n\nFinally press the tick mark at top left corner, when you\'re done writing you\'re
+            masterpiece novel.
+        </item>
+        <item>• Paper Towel
+            \n• Skim Milk
+            \n• Apple Cider
+            \n• Eggs Basket
+            \n• Brown Bread
+            \n• Stationary supplies
+            \n• Water Bottle
+        </item>
+        <item>- Get budget approval
+            \n- Schedule meeting with clients
+            \n- Update PR team
+            \n- Chat with Manager about deliverables.
+            \n- Buy company stocks and bonds.
+            \n- Participate in company IPO
+        </item>
+        <item>We need to talk about our plans for the much awaited Goa trip.
+            \n\nAlthough our first trip was kind of successful and worth it, we still had to leave
+            out many places, which are yet to be explored.
+            \n\n\nThat place is not to toured in a 48 hour sprint. We need to take out a couple of days
+            from our schedule and chart out proper and effective plans for all the local road trips
+            to cover andplaces to visit in the city.</item>
+        <item>To delete any note, just long press on its card, and an alert dialog will be shown asking for
+            your confirmation.
+            \n\nBeware!
+            \nDeleting any note will permanently delete it from your phone. There is no \"Trash\", no turning back from
+            whatever you do, at least for now.
+        </item>
+        <item>
+            To edit any note, first click on its card in the list of notes.
+            \n\nBy default, it will open in View mode, where you can scroll through your note and view
+            the contents.\n\nTo enter Edit mode, simply double-tap anywhere on the screen and you will be
+            brought into Edit mode where you can edit the title as well as content of the note.
+        </item>
+        <item>
+            This app was designed and crafted single-handedly as a hobby project, unlike the other
+            apps in the market which are backed by a team of developers, each perfecting and polishing
+            a niche part of the app.
+            \n\n\nThere are some features that I will try to implement whenever I get some free time,
+            viz. like Trash, To-Do list, Cloud Backup, etc.
+            \n\nYour kind support will go a long way in helping me reach all these feature milestones.
+            \n\nI am always grateful for any feedback you have.
+            \n\n\nPlease feel free to reach out to me!
+        </item>
+    </string-array>
 </resources>

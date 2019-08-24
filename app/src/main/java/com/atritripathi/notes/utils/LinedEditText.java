@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatEditText;
 
 public class LinedEditText extends AppCompatEditText {
+    public static final int NUM_NOTE_LINES = 100;
     private Rect mRect;
     private Paint mPaint;
 
@@ -30,7 +31,7 @@ public class LinedEditText extends AppCompatEditText {
     @Override
     protected void onDraw(Canvas canvas) {
         setPadding(12,12,12,12);
-        int height = 100 * ((View)this.getParent()).getHeight();
+        int height = NUM_NOTE_LINES * ((View)this.getParent()).getHeight();
         int lineHeight = getLineHeight();
         int numberOfLines = height / lineHeight;
 
@@ -44,7 +45,6 @@ public class LinedEditText extends AppCompatEditText {
             canvas.drawLine(rect.left,baseLine + 4, rect.right, baseLine + 4, paint);
             baseLine += lineHeight;
         }
-
         super.onDraw(canvas);
     }
 }

@@ -36,6 +36,6 @@
         android:inputType="textMultiLine|textCapSentences"
         android:textColor="?attr/editTextColor"
         android:textIsSelectable="true"
-        android:textSize="21sp" />
+        android:textSize="20sp" />
 
 </LinearLayout>

@@ -19,6 +19,7 @@
         <item name="tintColor">@color/black</item>
         <item name="noteBackground">@color/lightYellow</item>
         <item name="contentTextColor">@color/gunmetal</item>
+        
     </style>
 
 
