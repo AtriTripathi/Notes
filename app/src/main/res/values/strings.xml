@@ -1,3 +1,7 @@
+<!--
+  ~ Copyright 2019 Atri Tripathi. All rights reserved.
+  -->
+
 <resources>
     <string name="app_name">Notes</string>
     <string name="note_title">Note Title</string>

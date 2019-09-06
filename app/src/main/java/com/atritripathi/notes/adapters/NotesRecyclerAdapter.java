@@ -1,3 +1,7 @@
+/*
+ * Copyright 2019 Atri Tripathi. All rights reserved.
+ */
+
 package com.atritripathi.notes.adapters;
 
 import android.util.Log;

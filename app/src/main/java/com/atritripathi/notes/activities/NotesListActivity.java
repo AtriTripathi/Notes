@@ -1,3 +1,7 @@
+/*
+ * Copyright 2019 Atri Tripathi. All rights reserved.
+ */
+
 package com.atritripathi.notes.activities;
 
 import android.app.Dialog;

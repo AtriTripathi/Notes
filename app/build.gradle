@@ -1,3 +1,7 @@
+/*
+ * Copyright 2019 Atri Tripathi. All rights reserved.
+ */
+
 apply plugin: 'com.android.application'
 
 android {
@@ -31,9 +35,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
     // Design Support (for toolbar)
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 
     implementation 'androidx.room:room-runtime:2.1.0'
     annotationProcessor 'androidx.room:room-compiler:2.1.0'
-
 }
