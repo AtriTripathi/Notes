@@ -4,9 +4,9 @@ Notes - A simple, elegant and minimal note-taking app for android.
 <a href='https://play.google.com/store/apps/details?id=com.atritripathi.notes&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width=30% height=30%/></a>
 
 ## Screenshots
-<img src="./design/screen1.png" width="30%">&ensp;<img src="./design/screen2.png" width="30%">&ensp;<img src="./design/screen3.png" width="30%">
+<img src="./designs/screen1.png" width="30%">&ensp;<img src="./designs/screen2.png" width="30%">&ensp;<img src="./designs/screen3.png" width="30%">
 
-<img src="./design/screen4.png" width="30%">&ensp;<img src="./design/screen5.png" width="30%">&ensp;<img src="./design/screen6.png" width="30%">
+<img src="./designs/screen4.png" width="30%">&ensp;<img src="./designs/screen5.png" width="30%">&ensp;<img src="./designs/screen6.png" width="30%">
 
 ## Developed by
 
