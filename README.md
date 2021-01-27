@@ -12,7 +12,7 @@ Notes - A simple, elegant and minimal note-taking app for android.
 
 **Atri Tripathi**
 
-<img src="https://github.com/atritripathi.png" width="25%">
+<img src="https://github.com/atritripathi.png" width="18%">
 
 [atritripathi.com](https://atritripathi.com)
 
